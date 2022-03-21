@@ -87,7 +87,7 @@
         <div id="linhaEnder" class="LinhaForm">
           <textarea name="" id="linhaEnder" class="textArea LinhaForm InpBoxGnd" id="" cols="52" rows="10"></textarea>
         </div>
-        <div>
+        <div id="linhaEnder" class="LinhaForm ColDir">
           <label for="" class="">Valor: R$</label>
           <input type="text" class="InpBoxMed style " readonly="readonly">
         </div>
@@ -98,28 +98,32 @@
       <fieldset class="fieldset FSLinhaInteira">
         <legend>Dados do Cartão</legend>
         <div class="row">
-          <div class="">
-            <label for="" class="LabBox">Número</label>
-            <div class="" id="numCartao">
-              <input type="text" id="1" name="1" min="01" max="31" required="" class="numDD style">
-              <input type="text" id="2" name="2" min="01" max="31" required="" class="numDD style">
-              <input type="text" id="3" name="3" min="01" max="31" required="" class="numDD style">
-              <input type="text" id="4" name="4" min="01" max="31" required="" class="numDD style">
+          <div >
+            <div class="">
+              <label for="" class="LabBox">Número</label>
+              <div class="" id="numCartao">
+                <input type="text" id="1" name="1" min="01" max="31" required="" class="numDD style">
+                <input type="text" id="2" name="2" min="01" max="31" required="" class="numDD style">
+                <input type="text" id="3" name="3" min="01" max="31" required="" class="numDD style">
+                <input type="text" id="4" name="4" min="01" max="31" required="" class="numDD style">
+              </div>
             </div>
 
-
-            <label for="" class="LabBox">Validade</label>
-            <div class="" id="valCartão">
-              <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
-              <label for="">/</label>
-              <input type="number" id="ano" name="ano" min="1000" max="2999" required="" value="1980"
-                class="numQD style">
+            <div class="">
+              <label for="" class="LabBox">Validade</label>
+              <div class="" id="valCartão">
+                <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+                <label for="">/</label>
+                <input type="number" id="ano" name="ano" min="1000" max="2999" required="" value="1980"
+                  class="numQD style">
+              </div>
             </div>
-
-            <label for="" class="LabBox">Parcelas</label>
-            <div class="" id="boxParcel">
-              <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
-              <label for="">x Sem Juros</label>
+            <div class="LinhaForm">
+              <label for="" class="LabBox">Parcelas</label>
+              <div class="" id="boxParcel">
+                <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+                <label for="">x Sem Juros</label>
+              </div>
             </div>
           </div>
 
