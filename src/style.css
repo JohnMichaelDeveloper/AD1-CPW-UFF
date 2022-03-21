@@ -1,0 +1,437 @@
+
+/* 
+---------------- AD1 -------------------
+Aluno: John Michael de Almeida Peixoto
+CPW - Construção de Página Web
+Polo São Gonçalo - Periodo 2022.01
+----------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+/*------------------------------- */
+body{  
+  background: #116688;
+  font-family: var(--sourcesLora);
+  color: #EEEE22;
+  font-size: 16px;
+}
+/*-----------Variaveis----------- */
+:root{  
+  /* Fontes */
+  --sourcesLora:'Lora', Georgia,serif;
+  --sourcesRubik: 'Rubik', sans-serif;
+}
+/*------------------------------- */
+header, nav, section{
+  display: block; 
+}
+/*------------------------------- */
+header { 
+  /* width: 100%;
+  height: 142px; */
+  display: block; 
+  margin-bottom: 1px;
+}
+/*------------------------------- */
+nav { 
+  display: block; 
+  width: 18%; 
+  float: left;
+  margin-right: 10px;
+  font-family: var(--sourcesRubik);
+}
+/*------------------------------- */
+nav ul{
+  color: #FFDD22;
+  line-height: 230%;
+  margin-top: 40px;
+  list-style-type: square;
+}
+/*------------------------------- */
+section {
+  display: block;
+  width: 80%;
+  float: right;
+}
+.section{
+  width: 56%;
+  margin: 0px -60%;
+}
+/*------------------------------- */
+ul{
+  line-height: 200%;   
+}
+/*------------------------------- */
+li{
+  margin: 10px;  
+}
+/*------------------------------- */
+a{
+  color: #FFFF22;
+  text-decoration:none;
+}
+/*------------------------------- */
+a:hover{
+  color:#DDDD22;
+}
+/*------------------------------- */
+section ul{
+  color: #114455;
+  list-style: disc; 
+}
+/*------------------------------- */
+section ol{
+  color:#AA0000;  
+}
+
+/*------------------------------- */
+.ender{
+  width: 60%;
+  text-align: right;
+  font-size: 14px;
+  line-height: 140%;
+  float: right;
+}
+/*------------------------------- */
+.imgLogo{
+  border-bottom: 3px solid;
+  margin-bottom: 4px;
+  padding-bottom: 5px;
+  /* display:flex; */
+}
+/*------------------------------- */
+.apres{  
+  text-align: center;
+  font-size: 18px;   
+}
+/*------------------------------- */
+.listaMemo{
+  width: 340px;
+  background: #EEEEEE;
+  padding: 10px 10px 10px 50px;
+  color:#AA0000;
+  border: 4px solid #000055 ;
+  margin: 0px auto 10px auto;
+  list-style: decimal;
+  font-family: var(--sourcesRubik);
+  
+}
+/*------------------------------- */
+.preco{
+  color: #EE0000;
+  vertical-align:middle;
+  font: bold;
+}
+/*------------------------------- */
+.Titulo{
+  text-align: center;
+}
+/*------------------------------- */
+#linha-horizontal{
+  width: 300px;
+  border:1px solid #EEEE22;
+}
+/*------------------------------- */
+
+.title{
+  font-size: 20px;
+}
+
+
+/* ------------------table--------------------- */
+
+.tabDisco{
+  
+  border-collapse: collapse;
+  margin: 6px auto 10px auto;
+  background: #FFFFFF;
+  color: #000066;
+  font-family: var(--sourcesRubik);
+  font-size: 14px;
+}
+.linTH{
+  color: #FFFFFF;
+  background: #22BB66;
+  vertical-align:middle;
+  text-align: center;
+}
+.colTH{
+  color: #FFFFFF;
+  background: #2299DD;
+  text-align:left;
+}
+.imgDisco{
+  width: 70px;
+  height: 70px;
+}
+
+td, th{
+  border: 3px solid #226699;
+  padding: 6px 12px 6px 12px;
+}
+.titulo{
+  color: #FFFF00;
+  background: #229955;
+  font: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* -------------------Cadastro------------------- */
+
+.FormBox{
+  width: 520px;
+  background: #33BBBB;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  border: 3px solid #EEEE22;
+}
+/* -------------------Fieldset------------------- */
+.FSLinhaInteira{
+  color:white;
+  width: 490px;
+  text-align: left;
+}
+.FSColEsq{
+  width:210px;
+  text-align: center;
+  float: left;
+}
+.FSColDir{
+  width: 214px;
+  text-align: center;
+  float: right;
+}
+.fieldset{
+  border: 1px solid #a8dede;
+  box-shadow: 0px 0px 4px #87bdbe;
+}
+
+/* -------------------Box internas dos Fieldsets------------------- */
+.LinhaForm{
+  margin: 0px;
+  height: 30px;
+  padding: 6px 3px 0px 3px;
+}
+.ColEsq{
+  width: 180px;
+  float: left;
+  display: block;
+}
+.ColDir{
+  width: 180px;
+  float: right;
+  display: block;
+}
+.LabBox{
+  width: 80px;
+  float: left;
+  display: block;
+}
+.botoes{
+  text-align: right;
+  margin: 20px 10px 0px 10px;
+}
+
+/* -------------------Elementos------------------- */
+.InpBoxGnd{
+  width: 390px;
+    float: right;
+    display: block;
+    border: 1px solid #abc7c7;
+}
+.InpBoxMed{
+  width: 94px;
+  float: right;
+  display: block;
+  
+}
+.numDD{
+  width: 35px; 
+}
+.numQD{
+  width: 50px;  
+}
+
+.ajust-input{
+  margin: 0px -7px;
+}
+
+.extra{
+  border: 3px solid #f3eeee;
+  border-radius: 4px;
+  height: 20px;
+}
+legend{
+  text-align: left;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+} 
+
+input[type="radio" i] {
+  
+    cursor: pointer;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    /* border: initial; */
+    height: 20px;
+    width: 20px;
+    border: 3px solid turquoise;
+}
+
+#linhaEnder{
+  height: 50px;
+}
+#inpEnder{
+  width: 394px;
+  height: 80px;
+}
+.style{
+  border: 2px solid #abc7c7;
+  border-radius: 5px;
+  height: 22px;
+}
+
+.radio{
+ 
+  border: 3px solid;
+}
+/* -------------- */
+
+
+.radio, .checkbox {
+  cursor: pointer;
+  appearance: none;
+  width: 30px;
+  height: 30px; 
+  border-radius: 50%;
+  position: relative; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  
+}
+.radio:before, .checkbox:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background:#fffdfc;
+  border-radius: 50%;
+  opacity: 0;  
+  position: absolute;
+  border: 6.0px solid #c35e31;
+  box-shadow: 0px 0px 5px #111;  
+  padding: 1px;
+}
+
+
+.radio:checked:before, .checkbox:checked:before {
+  opacity: 1;
+}
+
+.btn-cadastro{
+  max-width:100%;
+  height: 2rem;
+  border-radius: 6px;
+  border: 2px solid #bbafaf;
+}
+
+/* ---- compras ---- */
+.compras{
+border: 2px solid #abc7c7;
+border-radius: 5px;
+height: 29px;
+}
+.bandeira{
+  width: 80px !important;
+  height: 100%;
+}
+.textArea{
+  width: 473px !important;
+}
+
+/*  */
+.cadastrarSe{
+  padding: 10px;
+  margin-top: 10px;
+}
+#loginCad{
+  width: 260px;
+}
+#idEmail{
+  width: 160px;
+}
+#senhaCad{
+  width: 180px;
+}
+#lisSelProd{
+  width: 370px;
+}
+#selProduto {
+  width: 67%;
+}
+#btnIncluir{
+  width: 70px;
+}
+#boxPedidos{
+  height: 100px;
+}
+#lisPedArea{
+  height: 90%;
+  width: 100%;
+}
+#fsBandeira{
+  width: 80px;
+  text-align: left;
+
+}
+#numCartao{
+  height: 35px;
+  width: 350px;
+  padding-top: 10px;
+}
+#valCartao {
+  width: 230px;
+  height: 35px;  
+}
+#boxParcel {
+  width: 230px;
+  height: 30px; 
+}
+
+/* -Dados do Cartão */
+
+.div-inline-block{
+  display: inline-block;
+  margin-top: 14px;
+  text-align: left;
+}
+.div-bandeira{
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.row {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.p-align{
+  margin: 0; 
+  padding: 0;
+}
+.mt--10{
+  margin-top: 10px;
+}

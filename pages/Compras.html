@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- ---------------------------------------------- -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PakiMemo | html5</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <!-- ---------------------------------------------- -->
+  <!-- Cabeçalho -->
+  <header>
+    <img class="imgLogo" src="/img/PakiLogoTopo.png" alt="">
+    <p class="ender"><i>Rua do Paço do Elefantinho, 123<br> Tel:(21) 4321-5678<br> contato@paquiderme.com.br</i></p>
+  </header>
+  <!-- ---------------------------------------------- -->
+  <!-- Navbar lado esquerdo -->
+  <nav>
+    <ul>
+      <li><a href="/pages/html5/PakiMemo.html">INICIAL</a></li>
+      <li><a href="/pages/Memorias.html">MEMÓRIAS</a></li>
+      <li><a href="/pages/Discos.html">HDs / SSDs</a></li>
+      <li><a href="/pages/Cadastro.html">CADASTRO</a></li>
+      <li><a href="/pages/Compras.html">COMPRAS</a></li>
+    </ul>
+  </nav>
+  <!-- ---------------------------------------------- -->
+  <!-- Seção lado direito -->
+  <section class="section">
+    <form class="FormBox" action="">
+      <p class="title">Compras</p>
+      <!-- ---------------------------------------------- -->
+      <!-- Identificação -->
+      <fieldset class="FSLinhaInteira fieldset ">
+        <legend>Identificação</legend>
+        <div id="loginCad idEmail" class="LinhaForm FSLinaInteira">
+
+          <label for="" class="">E-mail:</label>
+          <input type="text" class=" style" id="">
+
+          <div class="FSLinhaInteira ColDir" id="senhaCad">
+            <label for="" class="">Senha:</label>
+            <input type="text" class="InpBoxMed style ">
+          </div>
+        </div>
+        <br>
+        <div class="" id="">
+          <p class=" p-align">
+            Se você ainda não tem cadastro clique <a href="./Cadastro.html">aqui</a>!
+          </p>
+        </div>
+      </fieldset>
+      <!-- ---------------------------------------------- -->
+
+      <!-- Lista de compras -->
+      <fieldset class="FSLinhaInteira fieldset" id=" lisPedArea">
+        <legend>Lista de Compras</legend>
+        <div id="linhaEnder lisSelProd " class="LinhaForm FSLinaInteira">
+          <label for="" class="LinhaForm">Produtos:</label>
+          <select id="selProduto" class="compras" readonly="readonly">
+            <option selected>------</option>
+            <optgroup label="Memória DDR3">
+              <option>Kingston 4Gb</option>
+              <option>Samsung 8Gb</option>
+            </optgroup>
+            <optgroup label="Memória DDR4">
+              <option>Kingston Fury 8Gb</option>
+              <option>Corsair Vengeance 8Gb</option>
+            </optgroup>
+            <optgroup label="HD Sata III">
+              <option>Western Digital 500 Gb</option>
+              <option>Seagate 1 Tb</option>
+            </optgroup>
+            <optgroup label="SSD M2">
+              <option>Kingston 500 Gb</option>
+              <option>Western Digital 240 Gb</option>
+            </optgroup>
+          </select>
+          </table>
+          <input type="button" class="btn-cadastro" id="btnIncluir" value="Incluir">
+        </div>
+        <div id="linhaEnder" class="LinhaForm">
+          <textarea name="" id="linhaEnder" class="textArea LinhaForm InpBoxGnd" id="" cols="52" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="" class="">Valor: R$</label>
+          <input type="text" class="InpBoxMed style " readonly="readonly">
+        </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="fieldset FSLinhaInteira">
+        <legend>Dados do Cartão</legend>
+        <div class="row">
+          <div class="">
+            <label for="" class="LabBox">Número</label>
+            <div class="" id="numCartao">
+              <input type="text" id="1" name="1" min="01" max="31" required="" class="numDD style">
+              <input type="text" id="2" name="2" min="01" max="31" required="" class="numDD style">
+              <input type="text" id="3" name="3" min="01" max="31" required="" class="numDD style">
+              <input type="text" id="4" name="4" min="01" max="31" required="" class="numDD style">
+            </div>
+
+
+            <label for="" class="LabBox">Validade</label>
+            <div class="" id="valCartão">
+              <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+              <label for="">/</label>
+              <input type="number" id="ano" name="ano" min="1000" max="2999" required="" value="1980"
+                class="numQD style">
+            </div>
+
+            <label for="" class="LabBox">Parcelas</label>
+            <div class="" id="boxParcel">
+              <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+              <label for="">x Sem Juros</label>
+            </div>
+          </div>
+
+
+          <div>
+            <!-- ---------------------------------------------- -->
+            <!-- Genero -->
+            <fieldset class=" FSLinhaInteira FSColDir fieldset " id="fsBandeira">
+              <legend>Bandeira:</legend>
+              <div class=" div-bandeira">
+                <input type="radio" class="radio" checked="" name="bandeira" id="visa" value="visa">
+                <label for="visa" class="">Visa</label>
+              </div>
+              <div class="div-bandeira">
+                <input type="radio" class="radio" name="bandeira" id="master" value="master">
+                <label for="master" class="">Master</label>
+              </div>
+              <div class=" div-bandeira">
+                <input type="radio" class="radio" name="bandeira" id="elo" value="elo">
+                <label for="elo" class="">Elo</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+      <div class="botoes">
+        <input type="submit" class="btn-cadastro" value="Confirmar">
+        <input type="reset" class="btn-cadastro" value="Limpar">
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
