@@ -1,7 +1,16 @@
+<!--
+---------------- AD1 -------------------
+Aluno: John Michael de Almeida Peixoto
+CPW - Construção de Página Web
+Projeto: Construção do site PakiMemo
+Polo São Gonçalo - Periodo 2022.01
+----------------------------------------
+-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <!-- ---------------------------------------------- -->
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +39,7 @@
     </ul>
   </nav>
   <!-- ---------------------------------------------- -->
-  <!-- Seção lado direito -->
+  <!-- SECTION -->
   <section class="section">
     <form class="FormBox" action="">
       <p class="title">Compras</p>
@@ -40,54 +49,57 @@
         <legend>Identificação</legend>
         <div id="loginCad idEmail" class="LinhaForm FSLinaInteira">
 
-          <label for="" class="">E-mail:</label>
+          <label for="" class="emailAjs">E-mail:</label>
           <input type="text" class=" style" id="">
 
           <div class="FSLinhaInteira ColDir" id="senhaCad">
             <label for="" class="">Senha:</label>
             <input type="text" class="InpBoxMed style ">
           </div>
-        </div>
-        <br>
+        </div>        
         <div class="" id="">
           <p class=" p-align">
-            Se você ainda não tem cadastro clique <a href="./Cadastro.html">aqui</a>!
+           <i>
+             Se você ainda não tem cadastro clique <a href="./Cadastro.html">aqui</a>!
+           </i>
           </p>
         </div>
       </fieldset>
       <!-- ---------------------------------------------- -->
-
       <!-- Lista de compras -->
       <fieldset class="FSLinhaInteira fieldset" id=" lisPedArea">
         <legend>Lista de Compras</legend>
-        <div id="linhaEnder lisSelProd " class="LinhaForm FSLinaInteira">
+        <div id="linhaEnder lisSelProd " class="LinhaForm FSLinaInteira ajust-div">
           <label for="" class="LinhaForm">Produtos:</label>
-          <select id="selProduto" class="compras" readonly="readonly">
-            <option selected>------</option>
-            <optgroup label="Memória DDR3">
-              <option>Kingston 4Gb</option>
-              <option>Samsung 8Gb</option>
-            </optgroup>
-            <optgroup label="Memória DDR4">
-              <option>Kingston Fury 8Gb</option>
-              <option>Corsair Vengeance 8Gb</option>
-            </optgroup>
-            <optgroup label="HD Sata III">
-              <option>Western Digital 500 Gb</option>
-              <option>Seagate 1 Tb</option>
-            </optgroup>
-            <optgroup label="SSD M2">
-              <option>Kingston 500 Gb</option>
-              <option>Western Digital 240 Gb</option>
-            </optgroup>
-          </select>
+          
+            <select id="selProduto" class="compras" readonly="readonly">
+              <option selected>------</option>
+              <optgroup label="Memória DDR3">
+                <option>Kingston 4Gb</option>
+                <option>Samsung 8Gb</option>
+              </optgroup>
+              <optgroup label="Memória DDR4">
+                <option>Kingston Fury 8Gb</option>
+                <option>Corsair Vengeance 8Gb</option>
+              </optgroup>
+              <optgroup label="HD Sata III">
+                <option>Western Digital 500 Gb</option>
+                <option>Seagate 1 Tb</option>
+              </optgroup>
+              <optgroup label="SSD M2">
+                <option>Kingston 500 Gb</option>
+                <option>Western Digital 240 Gb</option>
+              </optgroup>
+            </select>          
           </table>
-          <input type="button" class="btn-cadastro" id="btnIncluir" value="Incluir">
+          <div class="div-btn">
+            <input type="button" class="btn-cadastro" id="btnIncluir" value="Incluir">
+          </div>
         </div>
-        <div id="linhaEnder" class="LinhaForm">
-          <textarea name="" id="linhaEnder" class="textArea LinhaForm InpBoxGnd" id="" cols="52" rows="10"></textarea>
+        <div id="linhaEnder" class="LinhaForm linhaAjst">
+          <textarea name="" id="linhaEnder" class="textArea LinhaForm InpBoxGnd linhaAjst" id="" cols="52" rows="30"></textarea>
         </div>
-        <div id="linhaEnder" class="LinhaForm ColDir">
+        <div class="LinhaForm ColDir">
           <label for="" class="">Valor: R$</label>
           <input type="text" class="InpBoxMed style " readonly="readonly">
         </div>
@@ -98,8 +110,8 @@
       <fieldset class="fieldset FSLinhaInteira">
         <legend>Dados do Cartão</legend>
         <div class="row">
-          <div >
-            <div class="">
+          <div>
+            <div class="ajust-div">
               <label for="" class="LabBox">Número</label>
               <div class="" id="numCartao">
                 <input type="text" id="1" name="1" min="01" max="31" required="" class="numDD style">
@@ -109,19 +121,19 @@
               </div>
             </div>
 
-            <div class="">
+            <div class="ajust-div">
               <label for="" class="LabBox">Validade</label>
               <div class="" id="valCartão">
-                <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+                <input type="number" id="mes" name="mes" min="01" max="12" required="" value="1" class="numDD style">
                 <label for="">/</label>
-                <input type="number" id="ano" name="ano" min="1000" max="2999" required="" value="1980"
+                <input type="number" id="ano" name="ano" min="1000" max="2999" required="" value="2022"
                   class="numQD style">
               </div>
             </div>
-            <div class="LinhaForm">
-              <label for="" class="LabBox">Parcelas</label>
+            <div class="LinhaForm ajust-div">
+              <label for="" class="LabBox ">Parcelas</label>
               <div class="" id="boxParcel">
-                <input type="number" id="mes" name="mes" min="01" max="12" required="" class="numDD style">
+                <input type="number" id="mes" name="mes" min="01" max="12" value="1" required="" class="numDD parcela style">
                 <label for="">x Sem Juros</label>
               </div>
             </div>
@@ -130,7 +142,7 @@
 
           <div>
             <!-- ---------------------------------------------- -->
-            <!-- Genero -->
+            <!-- Bandeira -->
             <fieldset class=" FSLinhaInteira FSColDir fieldset " id="fsBandeira">
               <legend>Bandeira:</legend>
               <div class=" div-bandeira">
@@ -151,8 +163,8 @@
         </div>
       </fieldset>
       <div class="botoes">
-        <input type="submit" class="btn-cadastro" value="Confirmar">
-        <input type="reset" class="btn-cadastro" value="Limpar">
+        <input type="submit" class="btn-cadastro" alt="Confirmar" value="Confirmar">
+        <input type="reset" class="btn-cadastro" alt="Limpar" value="Limpar">
       </div>
     </form>
   </section>

@@ -1,422 +1,440 @@
-
 /* 
 ---------------- AD1 -------------------
 Aluno: John Michael de Almeida Peixoto
 CPW - Construção de Página Web
+Projeto: Construção do site PakiMemo
 Polo São Gonçalo - Periodo 2022.01
 ----------------------------------------
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 
-/*------------------------------- */
-body{  
+body {
   background: #116688;
   font-family: var(--sourcesLora);
-  color: #EEEE22;
+  color: #eeee22;
   font-size: 16px;
 }
-/*-----------Variaveis----------- */
-:root{  
+/*----------- Variaveis ----------- */
+:root {
   /* Fontes */
-  --sourcesLora:'Lora', Georgia,serif;
-  --sourcesRubik: 'Rubik', sans-serif;
+  --sourcesLora: "Lora", Georgia, serif;
+  --sourcesRubik: "Rubik", sans-serif;
 }
-/*------------------------------- */
-header, nav, section{
-  display: block; 
+/*--------------------------------- */
+
+header,
+nav,
+section {
+  display: block;
 }
-/*------------------------------- */
-header { 
+
+header {
   /* width: 100%;
   height: 142px; */
-  display: block; 
+  display: block;
   margin-bottom: 1px;
 }
-/*------------------------------- */
-nav { 
-  display: block; 
-  width: 18%; 
+
+nav {
+  display: block;
+  width: 18%;
   float: left;
   margin-right: 10px;
   font-family: var(--sourcesRubik);
 }
-/*------------------------------- */
-nav ul{
-  color: #FFDD22;
+
+nav ul {
+  color: #ffdd22;
   line-height: 230%;
   margin-top: 40px;
   list-style-type: square;
 }
-/*------------------------------- */
+
 section {
   display: block;
   width: 80%;
   float: right;
 }
-.section{
-  width: 56%;
-  margin: 0px -60%;
-}
-/*------------------------------- */
-ul{
-  line-height: 200%;   
-}
-/*------------------------------- */
-li{
-  margin: 10px;  
-}
-/*------------------------------- */
-a{
-  color: #FFFF22;
-  text-decoration:none;
-}
-/*------------------------------- */
-a:hover{
-  color:#DDDD22;
-}
-/*------------------------------- */
-section ul{
-  color: #114455;
-  list-style: disc; 
-}
-/*------------------------------- */
-section ol{
-  color:#AA0000;  
+
+
+ul {
+  line-height: 200%;
 }
 
-/*------------------------------- */
-.ender{
+li {
+  margin: 10px;
+}
+
+a {
+  color: #ffff22;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dddd22;
+}
+
+section ul {
+  color: #114455;
+  list-style: disc;
+}
+
+section ol {
+  color: #aa0000;
+}
+
+
+.ender {
   width: 60%;
   text-align: right;
   font-size: 14px;
   line-height: 140%;
   float: right;
 }
-/*------------------------------- */
-.imgLogo{
+
+.imgLogo {
   border-bottom: 3px solid;
   margin-bottom: 4px;
   padding-bottom: 5px;
   /* display:flex; */
 }
-/*------------------------------- */
-.apres{  
+
+.apres {
   text-align: center;
-  font-size: 18px;   
+  font-size: 18px;
 }
-/*------------------------------- */
-.listaMemo{
+
+.listaMemo {
   width: 340px;
-  background: #EEEEEE;
+  background: #eeeeee;
   padding: 10px 10px 10px 50px;
-  color:#AA0000;
-  border: 4px solid #000055 ;
+  color: #aa0000;
+  border: 4px solid #000055;
   margin: 0px auto 10px auto;
   list-style: decimal;
   font-family: var(--sourcesRubik);
-  
 }
-/*------------------------------- */
-.preco{
-  color: #EE0000;
-  vertical-align:middle;
+
+.preco {
+  color: #ee0000;
+  vertical-align: middle;
   font: bold;
 }
-/*------------------------------- */
-.Titulo{
+
+.Titulo {
   text-align: center;
 }
-/*------------------------------- */
-#linha-horizontal{
+
+#linha-horizontal {
   width: 300px;
-  border:1px solid #EEEE22;
-}
-/*------------------------------- */
-
-.title{
-  font-size: 20px;
+  border: 1px solid #eeee22;
 }
 
 
-/* ------------------table--------------------- */
+/* --------------- table --------------- */
 
-.tabDisco{
-  
+.tabDisco {
   border-collapse: collapse;
   margin: 6px auto 10px auto;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000066;
   font-family: var(--sourcesRubik);
   font-size: 14px;
 }
-.linTH{
-  color: #FFFFFF;
-  background: #22BB66;
-  vertical-align:middle;
+.linTH {
+  color: #ffffff;
+  background: #22bb66;
+  vertical-align: middle;
   text-align: center;
 }
-.colTH{
-  color: #FFFFFF;
-  background: #2299DD;
-  text-align:left;
+.colTH {
+  color: #ffffff;
+  background: #2299dd;
+  text-align: left;
 }
-.imgDisco{
+.imgDisco {
   width: 70px;
   height: 70px;
 }
 
-td, th{
+td,
+th {
   border: 3px solid #226699;
   padding: 6px 12px 6px 12px;
 }
-.titulo{
-  color: #FFFF00;
+.titulo {
+  color: #ffff00;
   background: #229955;
   font: bold;
   text-align: center;
   font-size: 16px;
 }
 
-/* -------------------Cadastro------------------- */
+/* ------------ Cadastro/Compras --------------- */
 
-.FormBox{
+.FormBox {
   width: 520px;
-  background: #33BBBB;
+  background: #33bbbb;
   padding: 10px;
   font-size: 16px;
   text-align: center;
   margin-top: 10px;
-  border: 3px solid #EEEE22;
+  border: 3px solid #eeee22;
 }
-/* -------------------Fieldset------------------- */
-.FSLinhaInteira{
-  color:white;
-  width: 490px;
-  text-align: left;
-}
-.FSColEsq{
-  width:210px;
-  text-align: center;
-  float: left;
-}
-.FSColDir{
-  width: 214px;
-  text-align: center;
-  float: right;
-}
-.fieldset{
-  border: 1px solid #a8dede;
-  box-shadow: 0px 0px 4px #87bdbe;
+.title {
+  font-size: 20px;
 }
 
-/* -------------------Box internas dos Fieldsets------------------- */
-.LinhaForm{
-  margin: 0px;
-  height: 30px;
-  padding: 6px 3px 0px 3px;
-}
-.ColEsq{
-  width: 180px;
-  float: left;
-  display: block;
-}
-.ColDir{
-  width: 180px;
-  float: right;
-  display: block;
-}
-.LabBox{
-  width: 80px;
-  float: left;
-  display: block;
-}
-.botoes{
-  text-align: right;
-  margin: 20px 10px 0px 10px;
-}
-
-/* -------------------Elementos------------------- */
-.InpBoxGnd{
+.InpBoxGnd {
   width: 390px;
-    float: right;
-    display: block;
-    border: 1px solid #abc7c7;
+  float: right;
+  display: block;
+  border: 1px solid #abc7c7;
 }
-.InpBoxMed{
+.InpBoxMed {
   width: 94px;
   float: right;
   display: block;
-  
 }
-.numDD{
-  width: 35px; 
+.numDD {
+  width: 35px;
 }
-.numQD{
-  width: 50px;  
+.numQD {
+  width: 50px;
 }
 
-.ajust-input{
+.ajust-input {
   margin: 0px -7px;
 }
 
-.extra{
+.extra {
   border: 3px solid #f3eeee;
   border-radius: 4px;
   height: 20px;
 }
-legend{
+legend {
   text-align: left;
-  
 }
 
-input[type=number]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
-} 
+}
 
 input[type="radio" i] {
-  
-    cursor: pointer;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 0px 5px;
-    padding: initial;
-    /* border: initial; */
-    height: 20px;
-    width: 20px;
-    border: 3px solid turquoise;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  /* border: initial; */
+  height: 20px;
+  width: 20px;
+  border: 3px solid turquoise;
 }
 
-#linhaEnder{
+#linhaEnder {
   height: 50px;
 }
-#inpEnder{
+#inpEnder {
   width: 394px;
   height: 80px;
 }
-.style{
-  border: 2px solid #abc7c7;
-  border-radius: 5px;
-  height: 22px;
-}
 
-.radio{
- 
+.radio {
   border: 3px solid;
 }
-/* -------------- */
-
-
-.radio, .checkbox {
+.radio,
+.checkbox {
   cursor: pointer;
   appearance: none;
   width: 30px;
-  height: 30px; 
+  height: 30px;
   border-radius: 50%;
-  position: relative; 
+  position: relative;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   outline: none;
-  
 }
-.radio:before, .checkbox:before {
-  content: '';
+.radio:before,
+.checkbox:before {
+  content: "";
   width: 5px;
   height: 5px;
-  background:#fffdfc;
+  background: #fffdfc;
   border-radius: 50%;
-  opacity: 0;  
+  opacity: 0;
   position: absolute;
-  border: 6.0px solid #c35e31;
-  box-shadow: 0px 0px 5px #111;  
+  border: 6px solid #c35e31;
+  box-shadow: 0px 0px 5px #111;
   padding: 1px;
 }
 
-
-.radio:checked:before, .checkbox:checked:before {
+.radio:checked:before,
+.checkbox:checked:before {
   opacity: 1;
 }
 
-.btn-cadastro{
-  max-width:100%;
-  height: 2rem;
+.btn-cadastro {
+  max-width: 100%;
+  height: 1.75rem;
+  padding: 0px 12px;
+  color: #878785;
   border-radius: 6px;
   border: 2px solid #bbafaf;
+  background-image: linear-gradient(360deg, #897c7c45, #ffffff);
 }
 
-/* ---- compras ---- */
-.compras{
-border: 2px solid #abc7c7;
-border-radius: 5px;
-height: 29px;
+/* ------------ Fieldset --------------- */
+.FSLinhaInteira {
+  color: white;
+  width: 490px;
+  text-align: left;
 }
-.bandeira{
+.FSColEsq {
+  width: 210px;
+  text-align: center;
+  float: left;
+}
+.FSColDir {
+  width: 214px;
+  text-align: center;
+  float: right;
+}
+.fieldset {
+  border: 1px solid #a8dede;
+  box-shadow: 0px 0px 4px #87bdbe;
+}
+
+/* ------------ Box internas dos Fieldsets --------------- */
+.LinhaForm {
+  margin: 0px;
+  height: 30px;
+  padding: 6px 3px 0px 3px;
+}
+.ColEsq {
+  width: 180px;
+  float: left;
+  display: block;
+}
+.ColDir {
+  width: 180px;
+  float: right;
+  display: block;
+}
+.LabBox {
+  width: 80px;
+  float: left;
+  display: block;
+}
+.botoes {
+  text-align: right;
+  margin: 20px 10px 0px 10px;
+}
+
+/* ------------ compras --------------- */
+
+.section {
+  width: 56%;
+  margin: 0px -60%;
+}
+#idEmail {
+  width: 160px;
+}
+#loginCad {
+  width: 260px;
+}
+.style {
+  border: 2px solid #abc7c7;
+  border-radius: 5px;
+  height: 22px;
+  background-image: linear-gradient(360deg, #897c7c0d, #ffffff);
+}
+.compras {
+  border: 2px solid #abc7c7;
+  border-radius: 5px;
+  height: 29px;
+}
+.bandeira {
   width: 80px !important;
   height: 100%;
 }
-.textArea{
+.textArea {
   width: 473px !important;
 }
-
-/*  */
-.cadastrarSe{
+.cadastrarSe {
   padding: 10px;
   margin-top: 10px;
 }
-#loginCad{
-  width: 260px;
-}
-#idEmail{
-  width: 160px;
-}
-#senhaCad{
+#senhaCad {
   width: 180px;
 }
-#lisSelProd{
+#lisSelProd {
   width: 370px;
+  
 }
 #selProduto {
   width: 67%;
+  background-image: linear-gradient(360deg, #897c7c45, #ffffff);
 }
-#btnIncluir{
+#btnIncluir {
   width: 70px;
 }
-#boxPedidos{
+#boxPedidos {
   height: 100px;
 }
-#lisPedArea{
+#lisPedArea {
   height: 90%;
   width: 100%;
 }
-#fsBandeira{
+#fsBandeira {
   width: 80px;
   text-align: left;
-
 }
-#numCartao{
+#numCartao {
   height: 35px;
-  width: 350px;
+  width: 290px;
   padding-top: 10px;
 }
 #valCartao {
   width: 230px;
-  height: 35px;  
+  height: 35px;
 }
 #boxParcel {
   width: 230px;
-  height: 30px; 
+  height: 30px;
 }
 
-/* -Dados do Cartão */
+/* Ajustes  */
+.ajust-div {
+  display: flex;
+  align-items: center;  
+}
+.numero{
+  margin-right: 10px;
+}
+.emailAjs{
+  margin-right: 20px;
+}
+.parcela{
+  margin-left: -3px;
+}
+.div-btn{
+  margin: 0px 0px 0px 3.5rem;
+}
+.linhaAjst {
+  height: 80px !important;
+}
+/* ------------- Dados do Cartão ------------ */
 
-.div-inline-block{
+.div-inline-block {
   display: inline-block;
   margin-top: 14px;
   text-align: left;
 }
-.div-bandeira{
+.div-bandeira {
   margin-top: 0;
   display: flex;
   flex-direction: row;
@@ -424,14 +442,14 @@ height: 29px;
 }
 .row {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  -content: space-between;
+  align-items: center;
 }
-.p-align{
-  margin: 0; 
+.p-align {
+  margin: 0;
   padding: 0;
 }
-.mt--10{
+.mt--10 {
   margin-top: 10px;
 }
+
